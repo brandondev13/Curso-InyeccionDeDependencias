@@ -2,7 +2,9 @@ package com.inyeccion.mail;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.stereotype.Component;
 
+@Component("smtp")
 public class SmtpMailSender implements MailSender{
 
 
@@ -11,7 +13,7 @@ public class SmtpMailSender implements MailSender{
     @Override
     public void send(String to, String subject, String body) {
 
-        Log.info("Sending MOCK mail to " + to);
+        Log.info("Sending SMTP mail to " + to);
         Log.info("with subject " + subject);
         Log.info("and body " + body);
     }
