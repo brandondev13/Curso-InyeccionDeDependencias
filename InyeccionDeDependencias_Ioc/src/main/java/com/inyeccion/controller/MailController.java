@@ -10,14 +10,14 @@ public class MailController {
 
     private MailSender mailSender;
 
-    public MailController(@Qualifier("smtpMailSender") MailSender smtp) {
+    public MailController(MailSender smtp) {
         this.mailSender = smtp;
     }
 
 
     @RequestMapping("/mail")
     public String mail() {
-        mailSender.send("mail@example.com", "A test mail", "Body of the test mail");
+        mailSender.send("brandonmejiarestrepo@gmail.com", "A test mail", "Body of the test mail");
         return "Mail sent";
     }
 
