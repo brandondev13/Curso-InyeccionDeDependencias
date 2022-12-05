@@ -7,13 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Value("${app.name}")
-    private String appName;
-
-
     @RequestMapping("/hello")
     public String hello() {
-        return "Hello World " + appName;
+        return "Hello World " ;
     }
 
 }
