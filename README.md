@@ -1,4 +1,4 @@
-# InyeccionDeDependencias_Ioc
+# Curso-InyeccionDeDependencias
 
 +++ Practicando inyeccion de dependencias paso a paso. +++
 
